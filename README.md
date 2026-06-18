@@ -1,1 +1,1 @@
-# inter-university-event-notifier Web APP.
+# inter-university-event-notifier Web App
