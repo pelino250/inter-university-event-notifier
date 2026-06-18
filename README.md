@@ -1,0 +1,1 @@
+# inter-university-event-notifier
