@@ -1,4 +1,4 @@
-# name of the github action
+# name of the GitHub action
 name: linting
 
 # trigger
@@ -13,7 +13,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        run: echo "testing"
+        uses: actions/checkout@v7.0.0
+
+      - name: Python Setup
+        uses: actions/setup-python@v6.2.0
+        with:
+           python-version: ${{secrets.PYTHON_VERSION}}
+
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install -r requirements.txt
+          
+           
       
   
 
